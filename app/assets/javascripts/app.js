@@ -7,13 +7,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 "I don't want to sound enamored, but I think Vue.Js is pretty cool.",
                 "Vue.js can kick react's butt",
                 "Vue.js, eh. it's ok."
-                ]
+                ],
+      newReview: ""
     },
     mounted: function() {
 
     },
     methods: {
-
+      addReview: function() {
+        this.reviews.push(this.newReview);
+      }
     },
     computed: {
 
